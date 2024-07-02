@@ -6,6 +6,7 @@ import logo from "../../images/logo/next-gen.png";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -45,9 +46,9 @@ function NavBar() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link href="#home" className="text-black fw-bold">Home</Nav.Link>
-              <Nav.Link href="#about" className="text-black fw-bold">About Us</Nav.Link>
-              <Nav.Link href="#services" className="text-black fw-bold">Services</Nav.Link>
+              <NavLink to="/"  className="text-black fw-bold">Home</NavLink>
+              <NavLink to="/about" className="text-black fw-bold">About Us</NavLink>
+              <NavLink to="/services" className="text-black fw-bold">Services</NavLink>
             </Nav>
           </Navbar.Collapse>
           <div className="d-flex align-items-center order">
