@@ -13,7 +13,7 @@ function Join() {
     <div className="join position-relative">
       <Container>
         <div className="services-header mb-5">
-          <AnimationTitles title="What We Do Best" className="title" />
+          <AnimationTitles title="What We Do Bes" className="title" />
           <p className="text-white mt-3 col-12 col-lg-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
