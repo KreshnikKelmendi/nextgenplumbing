@@ -15,7 +15,6 @@ const LoadingSpinner = () => {
             ease: "easeInOut",
           }}
         >
-          {/* Placeholder for spinner animation */}
         </motion.div>
       </div>
       <div className="ml-4 kiki">
