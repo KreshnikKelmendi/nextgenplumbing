@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.873);
+  overflow-x: hidden;
 }
 
 :root {
@@ -102,7 +103,7 @@ body {
   top: 0;
   left: -10%;
   width: 100%;
-  height: 160px;
+  height: 100px;
   background-color: #ff0000;
   border-radius: 50%;
   filter: blur(12rem);
@@ -124,7 +125,10 @@ body {
 
 .loading .container div .cards {
   position: relative;
-  left: calc(55% - 60px);
+  left: calc(30% - 60px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   transform: translateX(-50%);
   width: fit-content;
   height: 300px;
@@ -344,7 +348,22 @@ body {
   -o-border-radius: 20px;
 } */
 
-
+.bg-plumbing{
+  background-image: url(./images/properties/plumbing-r4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-underfloor{
+  background-image: url(./images/properties/underfloor-heating.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.serviceTitle{
+  color: #ff0000;
+  z-index: 999;
+}
 /* End about us */
 
 /* Start developers */
@@ -409,7 +428,8 @@ body {
   box-shadow: 0 2px 3px rgba(128, 128, 128, 0.123);
 }
 .service-item i{
-  color: white;
+  color: #000e5d;
+  z-index: 999;
   padding: 10px 0px;
 }
 .service-image {
@@ -424,7 +444,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.61);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -597,6 +617,10 @@ footer div span {
 @media (max-width: 768px) {
   .loading .container .img-card {
     width: 100%;
+  }
+  
+  .about .container {
+    margin-top: 1rem;
   }
 
   .swiper-button-next,

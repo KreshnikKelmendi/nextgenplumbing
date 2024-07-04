@@ -29,7 +29,7 @@ function Loading() {
   {/* Other content */}
   <div
     style={{ color: "white" }}
-    className="d-none d-md-flex justify-content-between align-items-center my-4"
+    className="d-none d-md-flex justify-content-between align-items-center my-4 mt-lg-5"
   >
     <div className="text-center px-md-3"> {/* Adjusted padding */}
       <i className="fas fa-tools fs-1 d-block mb-2"></i>

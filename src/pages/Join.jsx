@@ -1,6 +1,8 @@
+import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
+import { useInView } from "react-intersection-observer";
 
 function Join() {
   // Define animation variants
@@ -9,11 +11,25 @@ function Join() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
 
+  // Intersection observer hook
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger animation once
+    threshold: 0.1 // Percentage of the card visible
+  });
+
+  // State to manage background color on hover
+  const [backgroundColor, setBackgroundColor] = useState("");
+
+  // Function to handle hover state
+  const handleHover = (color) => {
+    setBackgroundColor(color);
+  };
+
   return (
-    <div className="join position-relative">
+    <div className="join">
       <Container>
-        <div className="services-header mb-5">
-          <AnimationTitles title="What We Do Bes" className="title" />
+        <div className="services-header mb-4">
+          <AnimationTitles title="Our Services" className="title" />
           <p className="text-white mt-3 col-12 col-lg-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
@@ -23,53 +39,64 @@ function Join() {
           </p>
         </div>
         <Row>
-          {/* Service 1 */}
-          <Col xs={12} lg={4} className="px-3 py-5 py-lg-0 py-xxl-5">
+          {/* Plumbing Service */}
+          <Col
+            xs={12}
+            lg={6}
+            className="px-3 px-lg-3 py-3 py-lg-1 d-flex align-items-center"
+          >
             <motion.div
-              className="service-item text-center"
+              ref={ref}
+              className="service-item text-center bg-plumbing d-flex flex-column justify-content-center"
+              style={{
+                width: "100%",
+                height: "48vh",
+                backgroundColor: backgroundColor,
+              }}
               variants={cardVariants}
               initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              onHoverStart={() => handleHover("#000")} 
+              onHoverEnd={() => handleHover("")} 
             >
-              <i className="fas fa-wrench fa-4x mb-4"></i>
+              <div className="overlay"></div>
+              <i className="fas fa-wrench fa-4x mb-3"></i>
               <AnimationTitles
-                title="Emergency Repairs"
-                className="text-white mb-3 h4"
+                title="Plumbing Services"
+                className="serviceTitle mb-2 h4"
               />
             </motion.div>
           </Col>
 
-          {/* Service 2 */}
-          <Col xs={12} lg={4} className="px-3 py-5 py-lg-0 py-xxl-5">
+          {/* Heating Boiler Service */}
+          <Col
+            xs={12}
+            lg={6}
+            className="px-3 py-3 py-lg-1 d-flex align-items-center"
+          >
             <motion.div
-              className="service-item text-center"
+              ref={ref}
+              className="service-item text-center bg-underfloor d-flex flex-column justify-content-center"
+              style={{
+                width: "100%",
+                height: "48vh",
+                backgroundColor: backgroundColor,
+              }}
               variants={cardVariants}
               initial="hidden"
-              animate="visible"
-              transition={{ delay: 0.4 }}
-            >
-              <i className="fas fa-tools fa-4x mb-4"></i>
-              <AnimationTitles
-                title="Installation Services"
-                className="text-white mb-3 h4"
-              />
-            </motion.div>
-          </Col>
-
-          {/* Service 3 */}
-          <Col xs={12} lg={4} className="px-3 py-5 py-lg-0 py-xxl-5">
-            <motion.div
-              className="service-item text-center"
-              variants={cardVariants}
-              initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              onHoverStart={() => handleHover("#000")}
+              onHoverEnd={() => handleHover("")} 
             >
-              <i className="fas fa-cog fa-4x mb-4"></i>
+              <div className="overlay"></div>
+              <i className="fas fa-fire fa-4x mb-3"></i>
               <AnimationTitles
-                title="Maintenance"
-                className="text-white mb-3 h4"
+                title="Underfloor Heating Services"
+                className="mb-2 h4 serviceTitle"
               />
             </motion.div>
           </Col>

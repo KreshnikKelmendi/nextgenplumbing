@@ -1,28 +1,35 @@
+// App.js
+
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
 import NavBar from "./components/navbar/Navbar";
-import Developers from "./pages/Developers";
 import Footer from "./pages/Footer";
-import Join from "./pages/Join";
-import Loading from "./pages/Header";
-import Properties from "./pages/Properties";
 import HomePage from "./components/FullPages/HomePage";
 
+import { motion } from "framer-motion";
+import LoadingSpinner from "./components/Spinner/LoadingSpinner";
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay to show the loading spinner
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the delay time as needed
+  }, []);
+
   return (
     <>
       <BrowserRouter>
         <NavBar />
-        <Routes>
+        {loading ? (
+          <LoadingSpinner /> // Show the loading spinner while loading is true
+        ) : (
+          <Routes>
             <Route path="/" element={<HomePage />} />
-            </Routes>
-        {/* <Loading /> */}
-        {/* <Developers /> */}
-        {/* <Properties /> */}
-      
-        {/* <AboutUs /> */}
-        {/* <Join /> */}
-        
+          </Routes>
+        )}
         <Footer />
       </BrowserRouter>
     </>

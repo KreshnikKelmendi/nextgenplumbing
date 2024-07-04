@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <footer className="position-relative py-xxl-5">
+    <footer className="position-relative pt-5 py-xxl-5">
       <Container>
-        <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-4">
+        <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-5">
           <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
           >
             <img
-              src={require("../images/logo/next-gen.png")}
+              src={require("../images/logo/nextgen-white.png")}
               alt="logo"
               className="mb-3"
               style={{ width: "150px", height: "auto", objectFit: "contain" }}
@@ -21,7 +21,7 @@ function Footer() {
             <p className="text-white">
               Please contact us if you have any specific <br /> idea or request.
             </p>
-            <Link className="link-inbfo link-underline-opacity-0" to={""}>
+            <Link className="link-inbfo link-underline-opacity-0 fw-bold" to={""}>
               info@revend.group
             </Link>
           </motion.div>
@@ -33,7 +33,7 @@ function Footer() {
             className="d-flex"
           >
             <div className="me-5">
-              <h6 className="gray-100 text-uppercase mb-2 fw-normal">
+              <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
                 Company
               </h6>
               <ul className="p-0">
@@ -43,7 +43,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h6 className="gray-100 text-uppercase mb-2 fw-normal">
+              <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
                 Socials
               </h6>
               <ul className="p-0">
