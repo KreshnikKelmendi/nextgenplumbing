@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         {loading ? (
-          <LoadingSpinner /> // Show the loading spinner while loading is true
+          <LoadingSpinner /> 
         ) : (
           <Routes>
             <Route path="/" element={<HomePage />} />

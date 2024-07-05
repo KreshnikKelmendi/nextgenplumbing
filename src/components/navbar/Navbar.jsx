@@ -7,11 +7,13 @@ import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
+import ContactButton from "./ContactButton";
 
 function NavBar() {
   return (
     <>
-     <div className="phone-banner text-white py-3">
+
+<div className="phone-banner text-white py-3 ">
         <Container className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <i className="fas fa-phone-alt me-2"></i>
@@ -28,11 +30,10 @@ function NavBar() {
           </div>
         </Container>
       </div>
-
-
+      
       {/* Navigation bar */}
-      <Navbar expand="lg" className="py-2 py-xxl-4 bg-white navbar-header sticky-top">
-        <Container>
+      <Navbar expand="lg" className="py-2 py-lg-3 py-xxl-4 bg-white navbar-header sticky-top">
+        <Container >
           <Navbar.Brand href="#" className="me-lg-5">
             <img
               className="logo"
@@ -41,23 +42,15 @@ function NavBar() {
               alt="logo"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link to="/"  className="text-black fw-bold">Home</Nav.Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto my-2 my-lg-0">
+              <Nav.Link to="/" className="text-black fw-bold">Home</Nav.Link>
               <Nav.Link to="/about" className="text-black fw-bold">About Us</Nav.Link>
               <Nav.Link to="/services" className="text-black fw-bold">Services</Nav.Link>
             </Nav>
+            <ContactButton />
           </Navbar.Collapse>
-          <div className="d-flex align-items-center order">
-            <Button
-              variant="primary"
-              className="d-none d-lg-inline-block"
-              style={{ backgroundColor: "#ff0000", border: "none" }}
-            >
-              Contact
-            </Button>
-          </div>
         </Container>
       </Navbar>
     </>

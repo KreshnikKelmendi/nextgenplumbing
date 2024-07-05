@@ -1,40 +1,77 @@
 import React from 'react';
-import plumberImage from '../../images/properties/plumber-5.jpg'; // Replace with your image file path
+import plumberImage from '../../images/properties/plumber-5.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import AnimationTitles from '../functions/AnimationTitles';
 
 const SecondService = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, 
+    threshold: 0.5 
+  });
+
+  const serviceList = [
+    "Expertise and Experience",
+    "Cutting-Edge Technology",
+    "Customer-Focused Approach",
+    "24/7 Availability",
+    "Licensed and Insured"
+  ];
+
+  const listVariants = {
+    hidden: {
+      opacity: 0,
+      y: 5
+    },
+    visible: index => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: index * 0.2,
+        duration: 0.6
+      }
+    })
+  };
+
   return (
-    <div className="service-section bg-water-plumbing d-flex align-items-stretch" style={{ minHeight: '100vh' }}>
+    <div className="service-section bg-water-plumbing d-flex align-items-stretch" style={{ minHeight: '90vh' }}>
       <Container className="d-flex align-items-center">
         <Row className="align-items-center">
           <Col md={6}>
-            <img 
-              src={plumberImage} 
-              alt="Plumber" 
+            <img
+              src={plumberImage}
+              alt="Plumber"
               className="img-fluid firstServiceImage"
-              style={{ 
-                height: '100vh', 
+              style={{
+                height: '100vh',
                 objectFit: 'cover',
-                maxHeight: '500px' // Limit maximum height for smaller screens
+                maxHeight: '500px' 
               }}
             />
           </Col>
           <Col md={6}>
             <div className="service-content">
-              <AnimationTitles
-                title="Expert Services"/>
+              <AnimationTitles title="Why Choose Us" />
               <p>
-                The Pink Plumber started in 1995 with the goal of offering our customers some of the best plumbing services around. From that moment, we’ve been so confident in our work that we backed it with a <strong>100% Satisfaction Guarantee*</strong> for a year.
+                At NextGen Plumbing, we redefine excellence in plumbing services with a commitment to innovation, reliability, and customer satisfaction. Here’s why our clients choose us time and again:
               </p>
               <ul className="service-list">
-                <li><i className="fas fa-check-circle"></i> 100% Satisfaction Guaranteed*</li>
-                <li><i className="fas fa-check-circle"></i> Fast Response</li>
-                <li><i className="fas fa-check-circle"></i> Licensed, Bonded, & Insured</li>
-                <li><i className="fas fa-check-circle"></i> ACE Certified Technicians</li>
-                <div class="water-loader"></div>
+                {serviceList.map((item, index) => (
+                  <motion.li
+                    key={index}
+                    ref={ref}
+                    custom={index}
+                    initial="hidden"
+                    animate={inView ? 'visible' : 'hidden'}
+                    variants={listVariants}
+                    style={{ listStyleType: 'none' }}
+                  >
+                    <i className="fas fa-check-square"></i> {item}
+                  </motion.li>
+                ))}
               </ul>
-              
+              <div className="water-loader"></div>
             </div>
           </Col>
         </Row>
@@ -44,5 +81,3 @@ const SecondService = () => {
 }
 
 export default SecondService;
-
-

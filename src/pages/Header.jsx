@@ -33,18 +33,18 @@ function Loading() {
   >
     <div className="text-center px-md-3"> {/* Adjusted padding */}
       <i className="fas fa-tools fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0">15+</h5>
-      <span className="gray-100">years of experience</span>
+      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>15+</h5>
+      <span style={{ color: "white", fontWeight: '700' }}>years of experience</span>
     </div>
     <div className="text-center px-md-3"> {/* Adjusted padding */}
       <i className="fas fa-user-check fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0">5K+</h5>
-      <span className="gray-100">satisfied customers</span>
+      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>5K+</h5>
+      <span style={{ color: "white", fontWeight: '700' }}>satisfied customers</span>
     </div>
     <div className="text-center px-md-3"> {/* Adjusted padding */}
       <i className="fas fa-clock fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0">24/7</h5>
-      <span className="gray-100">emergency services</span>
+      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>24/7</h5>
+      <span style={{ color: "white", fontWeight: '700' }}>emergency services</span>
     </div>
   </div>
   {/* Other content */}
@@ -100,18 +100,18 @@ function Loading() {
         >
           <div className="text-center">
             <i className="fas fa-tools fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0">15+</h5>
-            <span className="gray-100">years of experience</span>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>15+</h5>
+            <span style={{ color: "white", fontWeight: '700' }}>years of experience</span>
           </div>
           <div className="text-center">
             <i className="fas fa-user-check fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0">5K+</h5>
-            <span className="gray-100">satisfied customers</span>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>5K+</h5>
+            <span style={{ color: "white", fontWeight: '700' }}>satisfied customers</span>
           </div>
           <div className="text-center">
             <i className="fas fa-clock fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0">24/7</h5>
-            <span className="gray-100">emergency services</span>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>24/7</h5>
+            <span style={{ color: "white", fontWeight: '700' }}>emergency services</span>
           </div>
         </div>
         {/* Other content */}

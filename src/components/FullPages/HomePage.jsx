@@ -3,6 +3,8 @@ import Loading from '../../pages/Header'
 import AboutUs from '../../pages/AboutUs'
 import Join from '../../pages/Join'
 import SecondService from '../About/SecondService'
+import PlumbingComponent from '../About/PlumbingContent'
+
 
 const HomePage = () => {
   return (
@@ -11,6 +13,7 @@ const HomePage = () => {
     <AboutUs />
     <Join />
     <SecondService />
+    <PlumbingComponent />
     </>
   )
 }
