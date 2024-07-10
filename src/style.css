@@ -785,6 +785,15 @@ footer div span {
   mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 140%);
 }
 
+.thirdServiceImage {
+  -webkit-mask-image: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+  mask-image: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+}
+
+.columns {
+  column-count: 2;
+}
+
 .bg-water-plumbing{
   background-image: url(./images/properties/water-background.jpg);
   background-position: center;

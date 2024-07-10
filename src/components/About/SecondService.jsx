@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AnimationTitles from '../functions/AnimationTitles';
+import WhyUs from './WhyUs';
 
 const SecondService = () => {
   const { ref, inView } = useInView({
@@ -35,7 +36,7 @@ const SecondService = () => {
   };
 
   return (
-    <div className="service-section bg-water-plumbing d-flex align-items-stretch" style={{ minHeight: '90vh' }}>
+    <div className="service-section bg-water-plumbing" style={{ minHeight: '90vh' }}>
       <Container className="d-flex align-items-center">
         <Row className="align-items-center">
           <Col md={6}>
@@ -76,6 +77,9 @@ const SecondService = () => {
           </Col>
         </Row>
       </Container>
+      <div className=''>
+        <WhyUs />
+      </div>
     </div>
   );
 }

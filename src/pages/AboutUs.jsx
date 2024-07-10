@@ -20,7 +20,7 @@ function AboutUs() {
             technology and modify their legal frameworks to accommodate it fast
             enough.
           </p>
-          <Button variant="primary ms-0">Read More</Button>
+          <Button variant="primary ms-0" style={{background: "#ff0000", border:'none'}}>Read More</Button>
         </motion.div>
         <motion.div
           initial={{ x: 200 }}
