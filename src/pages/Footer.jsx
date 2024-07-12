@@ -1,12 +1,17 @@
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import cash from "../images/properties/payment.png"
+import visa from "../images/properties/visa (1).png"
+import mastercard from "../images/properties/card (1).png"
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="position-relative pt-5 py-xxl-5">
+    <footer className="position-relative pt-5 py-xxl-2">
       <Container>
         <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-5">
+          {/* Left column */}
           <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: 0 }}
@@ -25,12 +30,16 @@ function Footer() {
               info@revend.group
             </Link>
           </motion.div>
+
+          {/* Spacer for mobile */}
           <span className="d-block d-md-none"></span>
+
+          {/* Right column */}
           <motion.div
             initial={{ x: 200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
-            className="d-flex"
+            className="d-flex flex-wrap"
           >
             <div className="me-5">
               <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
@@ -54,6 +63,29 @@ function Footer() {
             </div>
           </motion.div>
         </div>
+      
+        {/* Payment methods section */}
+        <div className="py-lg-3">
+          <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
+            Payment Methods
+          </h6>
+          <ul className="p-0">
+            <li className='d-flex align-items-center'><img src={cash} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Cash Payment</li>
+            <li className='d-flex align-items-center'><img src={visa} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Visa Payment</li>
+            <li className='d-flex align-items-center'><img src={mastercard} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Mastercard Payment</li>
+          </ul>
+          <p className="text-white mt-3">
+            All customers requesting to open an account must go through a credit verification.
+          </p>
+          <p className="text-white">
+            Payment terms are net 30 days after invoicing date, unless specified otherwise. All accounts that are past due will be subjected to a 2% interest rate each month.
+          </p>
+          <p className="text-white">
+            Plomberie Roger Chayer Inc. guarantees parts for 30 days following installation date as long as they have been subjected to normal use and have been maintained adequately. Quality of workmanship is also guaranteed 30 days following installation.
+          </p>
+        </div>
+
+        {/* Bottom section */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -68,8 +100,9 @@ function Footer() {
             </Link>
           </p>
         </motion.div>
-        
       </Container>
+
+      {/* Wave SVG */}
       <svg
         id="wave"
         className="wave-animation position-absolute"
@@ -90,6 +123,6 @@ function Footer() {
       </svg>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -36,14 +36,14 @@ const SecondService = () => {
   };
 
   return (
-    <div className="service-section bg-water-plumbing" style={{ minHeight: '90vh' }}>
+    <div className="service-section bg-water-plumbing bg-light" style={{ minHeight: '90vh' }}>
       <Container className="d-flex align-items-center">
         <Row className="align-items-center">
           <Col md={6}>
             <img
               src={plumberImage}
               alt="Plumber"
-              className="img-fluid firstServiceImage"
+              className="img-fluid firstServiceImage rounded"
               style={{
                 height: '100vh',
                 objectFit: 'cover',
