@@ -796,9 +796,18 @@ footer div span {
 
 .bg-water-plumbing{
   background-image: url(./images/properties/purepng.com-waterwaterdropslakessea-1411527270959iu2qk.png);
-  background-position: bottom left;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 300px;
+}
+.bg-water-plumbing2{
+  background-image: url(./images/properties/work5.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 8%);
+  mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 8%);
+  font-weight: 500;
 }
 .water-loader {
   width: 120px;
@@ -880,3 +889,6 @@ footer div span {
 .google-reviews-button {
   margin-top: 35px; /* Adjust top margin as needed */
 }
+
+
+

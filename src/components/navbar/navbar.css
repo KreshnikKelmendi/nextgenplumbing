@@ -37,6 +37,10 @@
   top: -12px;
   background-color: black;
 }
+.navbar-nav .nav-link {
+  text-decoration: none !important; /* Remove underline */
+  color: black; /* Set the color of the links */
+}
 .navbar-toggler{
   border-radius: 0;
   border: 0;
@@ -51,6 +55,10 @@
   bottom: -12px;
   background-color: black;
 
+}
+
+.active{
+  color: red;
 }
 
 .btn-primary {
@@ -123,3 +131,4 @@
     transform: translate(0px, 0px) rotate(-45deg);
   }
 }
+

@@ -34,7 +34,7 @@ function NavBar() {
       {/* Navigation bar */}
       <Navbar expand="lg" className="py-2 py-lg-3 py-xxl-4 bg-white navbar-header sticky-top">
         <Container >
-          <Navbar.Brand href="#" className="me-lg-5">
+          <Navbar.Brand href="/" className="me-lg-5">
             <img
               className="logo"
               style={{ width: "150px", height: "auto", objectFit: "contain" }}
@@ -45,9 +45,9 @@ function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto my-2 my-lg-0">
-              <Nav.Link to="/" className="text-black fw-bold">Home</Nav.Link>
-              <Nav.Link to="/about" className="text-black fw-bold">About Us</Nav.Link>
-              <Nav.Link to="/services" className="text-black fw-bold">Services</Nav.Link>
+              <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">Home</NavLink>
+              <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">About Us</NavLink>
+              <NavLink to="/services" className="nav-link text-black px-3 fw-bold">Services</NavLink>
             </Nav>
             <ContactButton />
           </Navbar.Collapse>

@@ -8,6 +8,7 @@ import HomePage from "./components/FullPages/HomePage";
 
 import { motion } from "framer-motion";
 import LoadingSpinner from "./components/Spinner/LoadingSpinner";
+import AboutUsPage from "./components/FullPages/AboutUsPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutUsPage />} />
           </Routes>
         )}
         <Footer />
