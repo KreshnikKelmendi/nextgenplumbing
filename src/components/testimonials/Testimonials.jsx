@@ -27,7 +27,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="pb-5 bg-light">
+    <section id="testimonials" className=" bg-light">
       <Container>
       <AnimationTitles className="mb-5" title="What Our Clients Say" />
         <Row className="justify-content-center">

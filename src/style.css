@@ -395,7 +395,7 @@ body {
 /* Start join */
 
 .join .container {
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .join .mySwiper .swiper-wrapper {
@@ -776,8 +776,15 @@ footer div span {
 }
 
 .firstServiceImage {
-  -webkit-mask-image: linear-gradient(to left, transparent 0.5%, white 60%);
-  mask-image: linear-gradient(to left, transparent 0.5%, white 60%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0.5%, white 60%);
+  mask-image: linear-gradient(to top, transparent 0.5%, white 60%);
+}
+
+@media (min-width: 1024px) {
+  .firstServiceImage {
+    -webkit-mask-image: linear-gradient(to left, transparent 0.5%, white 60%);
+    mask-image: linear-gradient(to left, transparent 0.5%, white 60%);
+  }
 }
 
 .secondServiceImage {
@@ -785,9 +792,23 @@ footer div span {
   mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 140%);
 }
 
+@media (min-width: 1024px) {
+  .secondServiceImage {
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 140%);
+  mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 140%);
+  }
+}
+
 .thirdServiceImage {
-  -webkit-mask-image: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+  mask-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+}
+
+@media (min-width: 1024px) {
+  .thirdServiceImage {
+    -webkit-mask-image: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
   mask-image: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.873) 60%);
+  }
 }
 
 .columns {
@@ -809,6 +830,25 @@ footer div span {
   mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 0.873) 8%);
   font-weight: 500;
 }
+.values-section{
+  background-image: url(./images/properties/travaux-plomberie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.value-card {
+   background-color: rgba(0, 0, 0, 0.377);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Smooth transition for background-color */
+  box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.668);
+}
+
+.value-card:hover {
+  background-color: #000e5d; 
+}
+
 .water-loader {
   width: 120px;
   height: 120px;

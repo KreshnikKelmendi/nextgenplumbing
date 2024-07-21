@@ -8,7 +8,7 @@ import mastercard from "../images/properties/card (1).png"
 
 const Footer = () => {
   return (
-    <footer className="position-relative pt-5 py-xxl-2">
+    <footer className="position-relative pt-0 py-xxl-2">
       <Container>
         <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-5">
           {/* Left column */}
@@ -43,12 +43,12 @@ const Footer = () => {
           >
             <div className="me-5">
               <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
-                Company
+                MENU
               </h6>
               <ul className="p-0">
-                <li>How it works</li>
-                <li>Market</li>
+                <li>Home</li>
                 <li>About Us</li>
+                <li>Services</li>
               </ul>
             </div>
             <div>
@@ -56,7 +56,6 @@ const Footer = () => {
                 Socials
               </h6>
               <ul className="p-0">
-                <li>Twitter</li>
                 <li>Instagram</li>
                 <li>Facebook</li>
               </ul>
@@ -74,15 +73,7 @@ const Footer = () => {
             <li className='d-flex align-items-center'><img src={visa} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Visa Payment</li>
             <li className='d-flex align-items-center'><img src={mastercard} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Mastercard Payment</li>
           </ul>
-          <p className="text-white mt-3">
-            All customers requesting to open an account must go through a credit verification.
-          </p>
-          <p className="text-white">
-            Payment terms are net 30 days after invoicing date, unless specified otherwise. All accounts that are past due will be subjected to a 2% interest rate each month.
-          </p>
-          <p className="text-white">
-            Plomberie Roger Chayer Inc. guarantees parts for 30 days following installation date as long as they have been subjected to normal use and have been maintained adequately. Quality of workmanship is also guaranteed 30 days following installation.
-          </p>
+        
         </div>
 
         {/* Bottom section */}

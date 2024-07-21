@@ -48,6 +48,8 @@ function NavBar() {
               <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">Home</NavLink>
               <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">About Us</NavLink>
               <NavLink to="/services" className="nav-link text-black px-3 fw-bold">Services</NavLink>
+              <NavLink to="/contact" className="nav-link text-black px-3 fw-bold">Contact</NavLink>
+
             </Nav>
             <ContactButton />
           </Navbar.Collapse>

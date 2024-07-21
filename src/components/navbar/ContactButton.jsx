@@ -22,7 +22,7 @@ function ContactButton() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow} style={{ background: '#ff0000', border: 'none' }}>
+      <Button variant="secondary" onClick={handleShow} style={{ background: '#ff0000', border: 'none' }}>
         Get Started
       </Button>
 

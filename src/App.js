@@ -9,6 +9,9 @@ import HomePage from "./components/FullPages/HomePage";
 import { motion } from "framer-motion";
 import LoadingSpinner from "./components/Spinner/LoadingSpinner";
 import AboutUsPage from "./components/FullPages/AboutUsPage";
+import Banner from "./components/banner/Banner";
+import ServicesPage from "./components/FullPages/ServicesPage";
+import ContactPage from "./components/FullPages/ContactPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,8 +33,11 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         )}
+        <Banner />
         <Footer />
       </BrowserRouter>
     </>

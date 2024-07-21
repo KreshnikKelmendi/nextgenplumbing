@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 function MyAccordion() {
   return (
-    <Container>
+    <Container >
       <Accordion defaultActiveKey="0" flush style={{ backgroundColor: '#ff0000' }}>
         <Accordion.Item eventKey="0" style={{ backgroundColor: '#000e5d', color: 'white', border: '1px solid #ddd' }}>
           <Accordion.Header style={{ backgroundColor: '#000e5d', color: 'white' }}>Accordion Item #1</Accordion.Header>
