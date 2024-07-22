@@ -11,7 +11,7 @@ const Contact = () => {
           <div className='d-lg-flex'>
             <Col md={6}>
               <h2>Contact Us</h2>
-              <div style={{ marginTop: '20px' }}>
+              <div style={{ marginTop: '21px' }}>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faPhone} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
                   <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>(123) 456-7890</p>
