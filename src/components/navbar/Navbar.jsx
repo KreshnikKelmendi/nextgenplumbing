@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <>
 
-<div className="phone-banner text-white py-3 ">
+<div className="phone-banner text-white py-3">
         <Container className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <i className="fas fa-phone-alt me-2"></i>
@@ -37,19 +37,18 @@ function NavBar() {
           <Navbar.Brand href="/" className="me-lg-5">
             <img
               className="logo"
-              style={{ width: "150px", height: "auto", objectFit: "contain" }}
+              style={{ width: "170px", height: "auto", objectFit: "contain" }}
               src={logo}
               alt="logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto my-2 my-lg-0">
-              <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">Home</NavLink>
-              <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-black px-3 fw-bold">About Us</NavLink>
-              <NavLink to="/services" className="nav-link text-black px-3 fw-bold">Services</NavLink>
-              <NavLink to="/contact" className="nav-link text-black px-3 fw-bold">Contact</NavLink>
-
+            <Nav className="me-auto my-2 my-lg-0 text-uppercase">
+              <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-danger px-3 fw-bold">Home</NavLink>
+              <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-danger px-3 fw-bold">About Us</NavLink>
+              <NavLink to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-danger px-3 fw-bold">Services</NavLink>
+              <NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="nav-link text-danger px-3 fw-bold">Contact</NavLink>
             </Nav>
             <ContactButton />
           </Navbar.Collapse>

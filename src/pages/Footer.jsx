@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import cash from "../images/properties/payment.png"
+import cash from "../images/properties/secure-payment.png"
 import visa from "../images/properties/visa (1).png"
 import mastercard from "../images/properties/card (1).png"
 
@@ -69,7 +69,7 @@ const Footer = () => {
             Payment Methods
           </h6>
           <ul className="p-0">
-            <li className='d-flex align-items-center'><img src={cash} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Cash Payment</li>
+            <li className='d-flex align-items-center'><img src={cash} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Check Payment</li>
             <li className='d-flex align-items-center'><img src={visa} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Visa Payment</li>
             <li className='d-flex align-items-center'><img src={mastercard} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Mastercard Payment</li>
           </ul>

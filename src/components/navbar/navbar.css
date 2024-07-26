@@ -7,13 +7,13 @@
 }
 
 .nav-link {
-  color: white;
+  color: #ff0000;
   letter-spacing: 0.3px;
   margin-right: 10px;
 }
 
 .nav-link:hover {
-  color: #a8a8a8;
+  color: blue;
 }
 
 .navbar-toggler:focus {
@@ -58,7 +58,7 @@
 }
 
 .active{
-  color: red;
+  color: blue;
 }
 
 .btn-primary {

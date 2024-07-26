@@ -18,7 +18,7 @@ const LoadingSpinner = () => {
         </motion.div>
       </div>
       <div className="ml-4 kiki">
-        <img src={logoImage} alt="Loading spinner" style={{ objectFit: 'contain', width: '120px', height: '120px' }} />
+        <img src={logoImage} alt="Loading spinner" style={{ objectFit: 'contain', width: '170px', height: '170px' }} />
       </div>
     </div>
   );

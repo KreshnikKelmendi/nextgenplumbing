@@ -20,7 +20,7 @@ function Loading() {
           animate={{ x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <AnimationTitles title="NextGen Plumbing" />
+          <AnimationTitles title="NEXTGEN PLUMBING" className="fw-bold" />
           <p className="text-white mt-3">
           Welcome to <b>NextGen Plumbing</b>, where we redefine what it means to have exceptional plumbing service. With a commitment to quality, reliability, and customer satisfaction, we offer a comprehensive range of plumbing solutions.
           </p>
