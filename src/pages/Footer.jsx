@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import cash from "../images/properties/secure-payment.png"
-import visa from "../images/properties/visa (1).png"
-import mastercard from "../images/properties/card (1).png"
+import cash from "../images/properties/secure-payment.png";
+import visa from "../images/properties/visa (1).png";
+import mastercard from "../images/properties/card (1).png";
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
             <p className="text-white">
               Please contact us if you have any specific <br /> idea or request.
             </p>
-            <Link className="link-inbfo link-underline-opacity-0 fw-bold" to={""}>
+            <Link className="link-info link-underline-opacity-0 fw-bold" to={""}>
               info@revend.group
             </Link>
           </motion.div>
@@ -62,18 +62,56 @@ const Footer = () => {
             </div>
           </motion.div>
         </div>
-      
-        {/* Payment methods section */}
-        <div className="py-lg-3">
-          <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
-            Payment Methods
-          </h6>
-          <ul className="p-0">
-            <li className='d-flex align-items-center'><img src={cash} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Check Payment</li>
-            <li className='d-flex align-items-center'><img src={visa} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Visa Payment</li>
-            <li className='d-flex align-items-center'><img src={mastercard} className='me-2' style={{width:"40px", height:"40px"}}  alt=''/> Mastercard Payment</li>
-          </ul>
-        
+
+        {/* Operating Hours and Payment Methods section */}
+        <div className="d-flex justify-content-between flex-column flex-md-row text-white py-3">
+          {/* Operating Hours */}
+          <div className="me-md-5">
+            <h6 className="fw-bold text-uppercase mb-2 fw-normal">
+              Operating Hours
+            </h6>
+            <ul className="p-0 list-unstyled">
+              <li>Monday-Friday: 8:00AM - 5:00PM</li>
+              <li>Saturday: Scheduled Appointments</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+
+          {/* Payment Methods */}
+          <div>
+            <h6 className="fw-bold text-uppercase mb-2 fw-normal">
+              Payment Methods
+            </h6>
+            <ul className="p-0">
+              <li className="d-flex align-items-center">
+                <img
+                  src={cash}
+                  className="me-2"
+                  style={{ width: "40px", height: "40px" }}
+                  alt="Check Payment"
+                />
+                Check Payment
+              </li>
+              <li className="d-flex align-items-center">
+                <img
+                  src={visa}
+                  className="me-2"
+                  style={{ width: "40px", height: "40px" }}
+                  alt="Visa Payment"
+                />
+                Visa Payment
+              </li>
+              <li className="d-flex align-items-center">
+                <img
+                  src={mastercard}
+                  className="me-2"
+                  style={{ width: "40px", height: "40px" }}
+                  alt="Mastercard Payment"
+                />
+                Mastercard Payment
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom section */}

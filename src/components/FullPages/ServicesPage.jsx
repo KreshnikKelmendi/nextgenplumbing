@@ -9,8 +9,8 @@ const ServicesPage = () => {
   return (
     <>
     <Join />
-    <ServicesFeature />
-    <HeatingServices />
+    {/* <ServicesFeature /> */}
+    {/* <HeatingServices /> */}
     <ServiceFeature2 />
     <Locations />
     </>

@@ -360,6 +360,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-gasPiping{
+  background-image: url(./images/properties/gasPiping.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-waterheater{
+  background-image: url(./images/properties/watterheater.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .serviceTitle{
   color: white;
   z-index: 999;
@@ -932,4 +944,88 @@ footer div span {
 
 .nextgenTitle{
   color: #000e5d;
+}
+
+.custom-accordion .accordion-button {
+  background-color: white; /* Dark blue background for accordion headers */
+  color: #000e5d; /* White text color */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #ff0000; /* Red background for active accordion headers */
+  color: #fff; /* White text color */
+}
+
+.custom-accordion .accordion-button:focus {
+  box-shadow: none; /* Remove focus shadow */
+}
+
+.custom-accordion-item {
+  border: none; /* Remove default border */
+}
+
+.custom-accordion-body {
+  background-color: #f8f9fa; /* Light background color for accordion body */
+  color: #000e5d; /* Dark blue text color */
+}
+
+.custom-card {
+  background-color: #fff; /* White background for cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+.custom-card .card-title {
+  color: #000e5d; /* Dark blue text color for card titles */
+}
+
+.custom-card .card-text {
+  color: #000e5d; /* Dark blue text color for card text */
+}
+
+.custom-accordion-item + .custom-accordion-item {
+  margin-top: 1rem; /* Add margin between accordion items */
+}
+
+
+
+.partners-container {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.partners-slider {
+  animation: slidein 14s linear infinite;
+  white-space: nowrap;
+}
+
+.partners-logos {
+  width: 50%;
+  display: inline-block;
+  margin: 0;
+}
+
+.partners-logos img {
+  width: calc(50% / 1); /* Adjust width if needed */
+  margin: 0 10px; /* Adjust spacing between images */
+  /* Add other styling properties if needed */
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

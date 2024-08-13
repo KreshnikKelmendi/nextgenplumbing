@@ -15,7 +15,7 @@ const testimonialsData = [
     name: 'Jane Smith',
     position: 'CTO, Another Company',
     text: 'Vestibulum et magna ac ex vehicula consequat vel eu nulla. Mauris sit amet metus et nulla suscipit maximus.',
-    rating: 4
+    rating: 5
   },
   {
     name: 'Michael Brown',
@@ -58,7 +58,7 @@ const Testimonials = () => {
         </Row>
         
         <div className="google-reviews-button text-center">
-          <button className="btn btn-dark d-inline-flex align-items-center" onClick={() => window.open('https://www.google.com/', '_blank')}>
+          <button className="btn btn-dark d-inline-flex align-items-center" onClick={() => window.open('https://g.co/kgs/DcnuJQP', '_blank')}>
             <img src={google} alt='' className="google-icon" style={{width: '18px', height: '18px', marginRight: '5px'}} />
             <span>SEE OUR GOOGLE REVIEWS</span>
           </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import visionImage from "../../images/properties/plumbing-r4.jpg";
 
 const App = () => {
@@ -10,21 +10,62 @@ const App = () => {
           <Col lg={6} className="mb-4">
             <div className='py-3 px-3 text-white rounded' style={{ backgroundColor: "#ff0000", minHeight: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h2>Our Vision</h2>
-              <p>Our Vision at Nextgen Plumbing is to redefine reliability in plumbing solutions. We envision a future where every home and business enjoys seamless plumbing experiences, backed by innovative technology and exceptional service. With a commitment to sustainability and customer satisfaction, we strive to set new standards in the plumbing industry, ensuring efficiency and peace of mind for all our clients.</p>
+              <p>We believe in building strong relationships and delivering results that exceed expectations. Whether you're embarking on a new construction project, managing a multi-family property, or simply need reliable service for your home or business, we are here to make your vision a reality.</p>
             </div>
           </Col>
           <Col lg={6} xs={12} className="mb-4">
             <img className='rounded' src={visionImage} alt="Vision" style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }} />
           </Col>
-          <Col lg={6} xs={12} className="mb-4">
-            <img className='rounded' src={visionImage} alt="Mission" style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }} />
-          </Col>
-          <Col lg={6} className="mb-4">
-            <div className='py-3 px-3 rounded' style={{ backgroundColor: "#000e5d", color: "white", minHeight: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h2>Our Mission</h2>
-              <p>At Nextgen Plumbing, our Mission is to deliver superior plumbing and underfloor heating services that exceed expectations. We dedicate ourselves to providing expert craftsmanship, utilizing cutting-edge techniques and premium materials to ensure durable and efficient solutions. Through transparent communication and personalized care, we aim to build lasting relationships with our customers, offering reliability, integrity, and excellence in every project we undertake.</p>
-            </div>
-          </Col>
+         
+          <Container className="mt-5">
+      <Row className="mb-4">
+        <Col>
+          <h2 className="col-12 col-lg-6">Our goal is to ensure your complete satisfaction through:</h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={6} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>Expertise and Precision</Card.Title>
+              <Card.Text>
+                With years of experience, our skilled team is equipped to handle diverse plumbing needs with professionalism and efficiency.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={6} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>Collaborative Approach</Card.Title>
+              <Card.Text>
+                We work hand-in-hand with clients and contractors to understand your needs, manage your budget, and adhere to your timeline.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={6} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>Uncompromising Quality</Card.Title>
+              <Card.Text>
+                From installation to maintenance, we deliver top-notch service and craftsmanship in every job we undertake.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={6} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>Safety</Card.Title>
+              <Card.Text>
+                We prioritize the safety of our team, clients, and work sites by adhering to the highest safety standards and practices.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
           
         </Row>
       </Container>

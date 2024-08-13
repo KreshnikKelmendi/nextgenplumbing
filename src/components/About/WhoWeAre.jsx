@@ -13,15 +13,16 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="about-us bg-light py-1 pb-lg-5">
+    <div className="about-us py-1 pb-lg-5" style={{backgroundColor: "#000E5D", color:"white"}}>
       <Container>
         <Row className="justify-content-center">
         <Col lg={12} className="pt-3">
         <AnimationTitles className="py-2" title="About Us" />
-            <p>
-              At Plomberie Roger Chayer Inc., as plumbing contractors, we specialize in plumbing services for the residential, multi-family housing and commercial sectors in Montreal. Our team of professional plumbers can meticulously and efficiently install, service and repair of all types of plumbing equipment. Whether to install a new system, to unclog or thaw pipes, to perform camera-assisted inspections in order to clean drainpipes and sewer lines, or to replace old steel pipes, our team of specialists is always attentive to your needs. We also offer you all-inclusive bathroom remodeling services.
+        <h4 className='fw-bold' style={{color:"#ff0000"}}>Welcome to NEXTGEN Plumbing – Your Trusted Plumbing Partner</h4>
+            <p className='mt-3'>
+            At NEXTGEN Plumbing, we take pride in being a family-owned business dedicated to delivering exceptional plumbing services with a personal touch. Our passion for excellence is driven by our commitment to collaborating closely with homeowners, business owners, and contractors to ensure every project meets your budget, schedule, and quality expectations.
               <br /><br />
-              At Plomberie Roger Chayer Inc., one of our specialties is in the area of hot-water heating and electric boilers. We perform installation, repair and maintenance work on hydronic heating equipment and can also install radiant floor heating.
+              As a family-owned business, we value trust, integrity, and transparency. Our team is dedicated to providing personalized service and building lasting relationships with our clients. We understand that every project is unique, and we are committed to delivering solutions that are both effective and affordable.
             </p>
           </Col>
           <Col lg={12} className="d-flex align-items-center justify-content-center py-3 py-lg-0">

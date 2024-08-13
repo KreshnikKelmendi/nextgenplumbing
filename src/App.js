@@ -12,6 +12,11 @@ import AboutUsPage from "./components/FullPages/AboutUsPage";
 import Banner from "./components/banner/Banner";
 import ServicesPage from "./components/FullPages/ServicesPage";
 import ContactPage from "./components/FullPages/ContactPage";
+import PlumbingServices from "./components/FullPages/PlumbingServices";
+import RadiantHeating from "./components/FullPages/RadiantHeating";
+import GasPiping from "./components/FullPages/GasPiping";
+import WaterTreatment from "./components/FullPages/WaterTreatment";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +40,10 @@ function App() {
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/plumbing-services" element={<PlumbingServices />} />
+            <Route path="/radiant-heating" element={<RadiantHeating />} />
+            <Route path="/gas-piping&testing-services" element={<GasPiping />} />
+            <Route path="/water-heaters&water-treatment" element={<WaterTreatment />} />
           </Routes>
         )}
         <Banner />

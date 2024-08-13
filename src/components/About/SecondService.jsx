@@ -16,7 +16,7 @@ const SecondService = () => {
     "Expertise and Experience",
     "Cutting-Edge Technology",
     "Customer-Focused Approach",
-    "24/7 Availability",
+    "Meeting Schedules, Availability",
     "Licensed and Insured"
   ];
 

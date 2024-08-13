@@ -13,12 +13,11 @@ function AboutUs() {
         >
           <AnimationTitles title="About Us" className="title" />
           <p className="gray-50 mb-5">
-            As new technologies like cryptocurrency develop, the real estate
-            sector is changing drastically. It is important to understand both
-            how these technologies and the traditional real estate market work.
-            Governments are unable to comprehend the rapid advancement of
-            technology and modify their legal frameworks to accommodate it fast
-            enough.
+              As new technologies develop, the construction sector is changing drastically. 
+              It is important to understand both how new technologies and the traditional construction work. 
+              Governments are unable to keep up with the rapid advancement of technology and modify their legal 
+              frameworks to accommodate it fast enough. As technology and industry trends evolve, staying current is crucial.
+             
           </p>
           <Button variant="primary ms-0" style={{background: "#ff0000", border:'none'}}>Read More</Button>
         </motion.div>

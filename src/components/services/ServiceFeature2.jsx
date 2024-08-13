@@ -13,12 +13,12 @@ const ServiceFeature2 = () => {
                 We Work Closely with Our Clients
               </h2>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
-                Tristate Plumbing takes on over 400 construction projects each year.
-                We handle each project individually and with unique care. Every construction
-                project begins with our estimating team working with clients to envision
-                their project clearly in order to minimize costs. The estimating phase is
-                crucial to ensure a smooth transition from bidding to building. We work
-                closely with clients to transition smoothly from estimating to construction.
+                NEXTGEN Plumbing takes on over 50 construction projects each year. 
+                We handle each project individually and with unique care. 
+                Every construction project begins with our estimating team 
+                working with clients to envision their project clearly in order to minimize costs. 
+                The estimating phase is crucial to ensure a smooth transition from bidding to building. 
+                We work closely with clients to transition smoothly from estimating to construction.
               </p>
             </Col>
             <Col md={6} className="text-center">
@@ -49,7 +49,10 @@ const ServiceFeature2 = () => {
               Expertise
               </h2>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
-              Every construction team member is a plumbing and sprinkler expert. Our knowledge of plumbing and fire suppression code is unrivaled. We are familiar with different types of plumbing and sprinkler design systems in government institutions, commercial properties, hospitals, laboratories, and residential high-rise properties.
+              Leverage our extensive plumbing knowledge and skills to address any issue with confidence. 
+              From intricate repairs and precise installations to advanced system design and maintenance, 
+              our expert team delivers reliable, high-quality solutions tailored to your specific needs. 
+              Trust our expertise to ensure your plumbing operates flawlessly and efficiently.
               </p>
             </Col>
           </Row>

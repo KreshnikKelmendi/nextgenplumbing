@@ -27,7 +27,7 @@ const WhyUs = () => {
             </ul>
             {/* Button to call the phone number */}
             <div className="d-flex align-items-center mt-4">
-              <button className='btn' style={{background: "#000e5d", color: 'white'}} onClick={handleCall}><i className="fas fa-phone-alt me-2"></i> +1 234-567-89</button>
+              <button className='btn' style={{background: "#000e5d", color: 'white'}} onClick={handleCall}><i className="fas fa-phone-alt me-2"></i>+1 701 970 9860</button>
             </div>
           </Col>
           <Col md={6} className="text-center">

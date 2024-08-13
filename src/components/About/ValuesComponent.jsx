@@ -42,7 +42,7 @@ const ValuesComponent = () => {
     <div className="values-section py-5 bg-light">
       <Container className='py-xxl-5'>
         <h2 className="text-white">Our Values</h2>
-        <p className='text-white col-12 col-lg-6'>Nextgen Plumbing is committed to providing exceptional service through our Preventative Maintenance program. We offer comprehensive support and solutions to ensure the reliability and efficiency of your plumbing and sprinkler systems.</p>
+        <p className='text-white col-12 col-lg-6'>Nextgen Plumbing is committed to providing exceptional service through our Preventative Maintenance program. We offer comprehensive support and solutions to ensure the reliability and efficiency of your plumbing.</p>
         <Row className="justify-content-center">
           {values.map((value, index) => (
             <ValueCard key={index} value={value} index={index} options={options} />
@@ -76,13 +76,13 @@ const ValueCard = ({ value, index, options }) => {
         <Card.Body>
           <div className="d-flex align-items-center mb-3">
             <div className="mr-3">
-              <FontAwesomeIcon icon={value.icon} style={{ color: 'antiquewhite', fontSize: '2rem' }} />
+              <FontAwesomeIcon icon={value.icon} style={{ color: '#ff0000', fontSize: '2rem' }} />
             </div>
             <div className='px-3'>
-            <h5 style={{ color: 'antiquewhite', textTransform: 'uppercase', marginRight: '10px', fontSize:"18px" }}>{value.title}</h5>
+            <h5 style={{ color: '#ff0000', textTransform: 'uppercase', marginRight: '10px', fontSize:"18px" }}>{value.title}</h5>
             </div>
           </div>
-          <Card.Text className="text-white py-2">{value.description}</Card.Text>
+          <Card.Text className="py-2">{value.description}</Card.Text>
         </Card.Body>
       </motion.div>
     </Col>

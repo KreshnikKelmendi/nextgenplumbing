@@ -14,15 +14,15 @@ const Contact = () => {
               <div style={{ marginTop: '21px' }}>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faPhone} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
-                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>(123) 456-7890</p>
+                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>+ 1 701 970 9860</p>
                 </div>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
-                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>email@example.com</p>
+                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>fjavori@ndnextgen.com</p>
                 </div>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
-                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>123 Main St, Anytown, USA</p>
+                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>623 22nd Street E., West Fargo ND 58078</p>
                 </div>
               </div>
             </Col>

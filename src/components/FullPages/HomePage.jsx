@@ -4,6 +4,7 @@ import AboutUs from '../../pages/AboutUs'
 import Join from '../../pages/Join'
 import SecondService from '../About/SecondService'
 import Testimonials from '../testimonials/Testimonials'
+import Partners from '../contact/Partners'
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
     <Join />
     <SecondService />
     <Testimonials />
+    <Partners />
     </>
   )
 }
