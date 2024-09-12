@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,6 +10,17 @@ import { NavLink } from "react-router-dom";
 import ContactButton from "./ContactButton";
 
 function NavBar() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsNavOpen(false); // Close the menu when a link is clicked
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth', // Smooth scrolling
+    });
+  };
+
   return (
     <>
       <div className="phone-banner text-white py-3">
@@ -43,7 +54,10 @@ function NavBar() {
       </div>
 
       {/* Navigation bar */}
-      <Navbar expand="lg" className="py-2 py-lg-3 py-xxl-4 bg-white navbar-header sticky-top">
+      <Navbar
+        expand="lg"
+        className="py-2 py-lg-3 py-xxl-4 bg-white navbar-header sticky-top"
+      >
         <Container>
           <Navbar.Brand href="/" className="me-lg-5">
             <img
@@ -53,19 +67,24 @@ function NavBar() {
               alt="logo"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
+            <span className={`navbar-toggler-icon ${isNavOpen ? 'close-icon' : ''}`}></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav" in={isNavOpen}>
             <Nav className="me-auto my-2 my-lg-0 text-uppercase">
               <NavLink
                 to="/"
-                onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                onClick={handleLinkClick}
                 className="nav-link text-danger px-3 fw-bold"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/about"
-                onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                onClick={handleLinkClick}
                 className="nav-link text-danger px-3 fw-bold"
               >
                 About Us
@@ -78,7 +97,7 @@ function NavBar() {
                 <NavDropdown.Item as="div">
                   <NavLink
                     to="/services"
-                    onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                    onClick={handleLinkClick}
                     className="dropdown-item text-danger fw-bold"
                   >
                     All Services
@@ -88,7 +107,7 @@ function NavBar() {
                 <NavDropdown.Item as="div">
                   <NavLink
                     to="/plumbing-services"
-                    onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                    onClick={handleLinkClick}
                     className="dropdown-item text-danger fw-bold"
                   >
                     PLUMBING SERVICES
@@ -97,7 +116,7 @@ function NavBar() {
                 <NavDropdown.Item as="div">
                   <NavLink
                     to="/radiant-heating"
-                    onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                    onClick={handleLinkClick}
                     className="dropdown-item text-danger fw-bold"
                   >
                     HYDRONIC SYSTEMS
@@ -106,7 +125,7 @@ function NavBar() {
                 <NavDropdown.Item as="div">
                   <NavLink
                     to="/gas-piping&testing-services"
-                    onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                    onClick={handleLinkClick}
                     className="dropdown-item text-danger fw-bold"
                   >
                     Gas Piping & Testing Services
@@ -115,7 +134,7 @@ function NavBar() {
                 <NavDropdown.Item as="div">
                   <NavLink
                     to="/water-heaters&water-treatment"
-                    onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                    onClick={handleLinkClick}
                     className="dropdown-item text-danger fw-bold"
                   >
                     Water Heaters and Water Treatment
@@ -124,7 +143,7 @@ function NavBar() {
               </NavDropdown>
               <NavLink
                 to="/contact"
-                onClick={() => window.scrollTo({ top: 0, left: 0 })}
+                onClick={handleLinkClick}
                 className="nav-link text-danger px-3 fw-bold"
               >
                 Contact

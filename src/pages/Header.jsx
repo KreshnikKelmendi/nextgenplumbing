@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CountDown from "../components/functions/CountDown";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
+import { Link } from "react-router-dom";
 
 function Loading() {
   // Like button of properties
@@ -24,7 +25,11 @@ function Loading() {
           <p className="text-white mt-3">
           Welcome to <b>NextGen Plumbing</b>, where we redefine what it means to have exceptional plumbing service. With a commitment to quality, reliability, and customer satisfaction, we offer a comprehensive range of plumbing solutions.
           </p>
-            <Button variant="primary ms-0 mt-2" style={{backgroundColor: "#ff0000", border: 'none'}}>Read More</Button>
+          <Link to="/about">
+            <Button variant="primary ms-0 mt-2" style={{backgroundColor: "#ff0000", border: 'none'}}>
+              Read More
+            </Button>
+          </Link>
           <Container className="d-flex justify-content-between align-items-center gap-md-5 flex-column flex-md-row mt-3 mt-xl-4">
   {/* Other content */}
 <div
