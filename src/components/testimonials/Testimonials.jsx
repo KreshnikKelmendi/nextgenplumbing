@@ -1,26 +1,25 @@
 import React from 'react';
-import { Container, Row, Col, Card, Carousel, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import google from "../../images/properties/search.png";
 import AnimationTitles from '../functions/AnimationTitles';
 
-
 const testimonialsData = [
   {
-    name: 'John Doe',
-    position: 'CEO, Example Company',
-    text: 'Nextgen Plumbing has been amazing to work with! They are always so responsive and accommodating. Every interaction with them is professional and they go above and beyond to assist us! It has been a pleasure having them as a vendor and we definitely recommend them to others!”',
+    name: 'Laura Martinez',
+    position: 'Homeowner',
+    text: 'Nextgen Plumbing is incredible! They responded promptly to my call when my kitchen sink was leaking. The technicians were polite, professional, and very efficient. They fixed the problem quickly, and I haven’t had an issue since. Highly recommend!',
     rating: 5
   },
   {
-    name: 'Jane Smith',
-    position: 'CTO, Another Company',
-    text: 'Vestibulum et magna ac ex vehicula consequat vel eu nulla. Mauris sit amet metus et nulla suscipit maximus.',
+    name: 'Mark Thompson',
+    position: 'Small Business Owner',
+    text: 'We had a major plumbing issue at our office, and Nextgen Plumbing saved the day! Their team worked through the night to get everything repaired. They were quick, reliable, and charged a fair price for such urgent work. Excellent service!',
     rating: 5
   },
   {
-    name: 'Michael Brown',
-    position: 'COO, Yet Another Company',
-    text: 'Aenean nec nunc nec dolor blandit faucibus. Duis euismod est nec maximus luctus. Integer in quam in turpis mattis vehicula.',
+    name: 'Emily Davis',
+    position: 'Property Manager',
+    text: 'As a property manager, I rely on contractors to get the job done right. Nextgen Plumbing has been my go-to for all our plumbing needs. They consistently deliver top-notch service, and their customer support is fantastic!',
     rating: 5
   }
 ];
@@ -29,7 +28,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className=" bg-light">
       <Container>
-      <AnimationTitles className="mb-5" title="What Our Clients Say" />
+        <AnimationTitles className="mb-5" title="What Our Clients Say" />
         <Row className="justify-content-center">
           <Col md={12}>
             <Carousel>

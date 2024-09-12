@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import cash from "../images/properties/secure-payment.png";
 import visa from "../images/properties/visa (1).png";
@@ -27,7 +27,7 @@ const Footer = () => {
               Please contact us if you have any specific <br /> idea or request.
             </p>
             <Link className="link-info link-underline-opacity-0 fw-bold" to={""}>
-              info@revend.group
+            fjavori@ndnextgen.com
             </Link>
           </motion.div>
 
@@ -46,9 +46,11 @@ const Footer = () => {
                 MENU
               </h6>
               <ul className="p-0">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
+                <li><NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Home</NavLink></li>
+                <li><NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>About Us</NavLink></li>
+                <li><NavLink to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Services</NavLink></li>
+                <li className='mt-1'><NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Contact</NavLink></li>
+
               </ul>
             </div>
             <div>
@@ -56,8 +58,8 @@ const Footer = () => {
                 Socials
               </h6>
               <ul className="p-0">
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li><a style={{color: "white"}} href="https://www.instagram.com/ndnextgen" target='_blank' rel="noreferrer">Instagram</a></li>
+                {/* <li>Facebook</li> */}
               </ul>
             </div>
           </motion.div>
@@ -124,9 +126,9 @@ const Footer = () => {
           <p>© 2024 NEXTGEN PLUMBING. All rights reserved</p>
           <p>
             Developed by: {''}
-            <Link className="link-info link-underline-opacity-0" to={""}>
+            <a href='https://www.sync-code.com/' target='_blank' rel="noreferrer" className="link-info link-underline-opacity-0" to={""}>
               Sync Code
-            </Link>
+            </a>
           </p>
         </motion.div>
       </Container>

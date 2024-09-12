@@ -1,6 +1,11 @@
 import { Button, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
+import image1 from "../images/properties/1726 (1).jpg"
+import image2 from "../images/properties/IMG_5932.JPG"
+import image3 from "../images/properties/IMG_5055.jpg"
+import image4 from "../images/properties/IMG_4885 (1).jpg"
+import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -19,7 +24,9 @@ function AboutUs() {
               frameworks to accommodate it fast enough. As technology and industry trends evolve, staying current is crucial.
              
           </p>
-          <Button variant="primary ms-0" style={{background: "#ff0000", border:'none'}}>Read More</Button>
+          <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
+            <Button variant="primary ms-0" style={{background: "#ff0000", border:'none'}}>Read More</Button>
+          </NavLink>
         </motion.div>
         <motion.div
           initial={{ x: 200 }}
@@ -30,14 +37,14 @@ function AboutUs() {
           <div className="d-flex">
             <div>
               <img
-                src={require("..//images/bohdan-d-fh6o-XkVQG8-unsplash.webp")}
+                src={image1}
                 className="p-0 me-2 img"
                 alt="img"
               />
             </div>
             <div>
               <img
-                src={require("..//images/john-o-nolan-6f_ANCcbj3o-unsplash.webp")}
+                src={image2}
                 className="p-0 img"
                 alt="img"
               />
@@ -46,14 +53,14 @@ function AboutUs() {
           <div className="d-flex">
             <div>
               <img
-                src={require("..//images/julia-solonina-ci19YINguoc-unsplash.webp")}
+                src={image3}
                 className="p-0 me-2 img"
                 alt="img"
               />
             </div>
             <div>
               <img
-                src={require("..//images/theater-amazonas-manaus.webp")}
+                src={image4}
                 className="p-0 img"
                 alt="img"
               />

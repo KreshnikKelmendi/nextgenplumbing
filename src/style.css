@@ -374,8 +374,17 @@ body {
 }
 .serviceTitle{
   color: white;
-  z-index: 999;
+  z-index: 9;
 }
+.full-width-carousel {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  left: 50%;     /* Move the div 50% right */
+  right: 50%;    /* Move the div 50% left */
+  margin-left: -50vw; /* Pull the element back to the left */
+  margin-right: -50vw; /* Pull the element back to the right */
+}
+
 /* End about us */
 
 /* Start developers */

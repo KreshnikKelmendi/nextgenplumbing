@@ -27,26 +27,27 @@ function Loading() {
             <Button variant="primary ms-0 mt-2" style={{backgroundColor: "#ff0000", border: 'none'}}>Read More</Button>
           <Container className="d-flex justify-content-between align-items-center gap-md-5 flex-column flex-md-row mt-3 mt-xl-4">
   {/* Other content */}
-  <div
-    style={{ color: "white" }}
-    className="d-none d-md-flex justify-content-between align-items-center my-4 mt-lg-5"
-  >
-    <div className="text-center px-md-3"> {/* Adjusted padding */}
-      <i className="fas fa-tools fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>15+</h5>
-      <span style={{ color: "white", fontWeight: '700' }}>years of experience</span>
-    </div>
-    <div className="text-center px-md-3"> {/* Adjusted padding */}
-      <i className="fas fa-user-check fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>5K+</h5>
-      <span style={{ color: "white", fontWeight: '700' }}>satisfied customers</span>
-    </div>
-    <div className="text-center px-md-3"> {/* Adjusted padding */}
-      <i className="fas fa-clock fs-1 d-block mb-2"></i>
-      <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>24/7</h5>
-      <span style={{ color: "white", fontWeight: '700' }}>emergency services</span>
-    </div>
+<div
+  style={{ color: "white" }}
+  className="d-none d-md-flex justify-content-between align-items-center my-4 mt-lg-5"
+>
+  <div className="text-center px-md-3">
+    <i className="fas fa-toolbox fs-1 d-block mb-2"></i>
+    <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Expert Team</h5>
+    <span style={{ color: "gray", fontWeight: '700' }}>licensed professionals</span>
   </div>
+  <div className="text-center px-md-3">
+    <i className="fas fa-handshake fs-1 d-block mb-2"></i>
+    <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Trustworthy Service</h5>
+    <span style={{ color: "gray", fontWeight: '700' }}>customer-first approach</span>
+  </div>
+  <div className="text-center px-md-3">
+    <i className="fas fa-shower fs-1 d-block mb-2"></i>
+    <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Latest Solutions</h5>
+    <span style={{ color: "gray", fontWeight: '700' }}>modern technology</span>
+  </div>
+</div>
+
   {/* Other content */}
 </Container>
 
@@ -96,24 +97,25 @@ function Loading() {
         {/* Other content */}
         <div
           style={{ color: "white" }}
-          className="d-flex d-md-none justify-content-between align-items-center my-4"
+          className="d-block d-md-none row justify-content-between align-items-center my-4 mt-lg-5 text-center"
         >
-          <div className="text-center">
-            <i className="fas fa-tools fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>15+</h5>
-            <span style={{ color: "white", fontWeight: '700' }}>years of experience</span>
+          <div className="col-12 col-md-4 px-md-3 mb-4 mb-md-0">
+            <i className="fas fa-toolbox fs-1 d-block mb-2"></i>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Expert Team</h5>
+            <span style={{ color: "gray", fontWeight: '700' }}>licensed professionals</span>
           </div>
-          <div className="text-center">
-            <i className="fas fa-user-check fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>5K+</h5>
-            <span style={{ color: "white", fontWeight: '700' }}>satisfied customers</span>
+          <div className="col-12 col-md-4 px-md-3 mb-4 mb-md-0">
+            <i className="fas fa-handshake fs-1 d-block mb-2"></i>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Trustworthy Service</h5>
+            <span style={{ color: "gray", fontWeight: '700' }}>customer-first approach</span>
           </div>
-          <div className="text-center">
-            <i className="fas fa-clock fs-1 d-block mb-2"></i>
-            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>24/7</h5>
-            <span style={{ color: "white", fontWeight: '700' }}>emergency services</span>
+          <div className="col-12 col-md-4 px-md-3">
+            <i className="fas fa-shower fs-1 d-block mb-2"></i>
+            <h5 className="fw-bold mb-0" style={{ color: "white", fontWeight: '700' }}>Latest Solutions</h5>
+            <span style={{ color: "gray", fontWeight: '700' }}>modern plumbing technology</span>
           </div>
         </div>
+
         {/* Other content */}
       </Container>
         </motion.div>

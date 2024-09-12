@@ -27,16 +27,15 @@ const Contact = () => {
               </div>
             </Col>
             <Col xs={12} md={6}>
-              <iframe
-                title="Google Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509368!2d144.9537353154094!3d-37.81720974201071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f760981f0f01!2s123%20Main%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1631361120934!5m2!1sen!2sus"
-                width="100%"
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2727.6754883529893!2d-96.86818552319166!3d46.86975823856839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c8cb40fdbe5ced%3A0xb236ffff0ccfe79c!2s623%2022nd%20St%20E%2C%20West%20Fargo%2C%20ND%2058078%2C%20USA!5e0!3m2!1sen!2s!4v1726133770309!5m2!1sen!2s" 
+              width="100%"
+              title="Our Locations"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
-                className='rounded'
-              ></iframe>
+                className='rounded'></iframe>
             </Col>
           </div>
         </Col>

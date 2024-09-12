@@ -17,27 +17,27 @@ function NavBar() {
           <div className="d-flex align-items-center">
             <i className="fas fa-phone-alt me-2"></i>
             <p className="mb-0">
-              Call us at: <strong>+1 234 567 890</strong>
+              Call us at: <strong>+1 701 970 9860</strong>
             </p>
           </div>
           <div className="d-flex align-items-center">
             <p className="mb-0 me-3">Follow us:</p>
             <a
-              href="https://www.instagram.com/your_instagram_username"
+              href="https://www.instagram.com/ndnextgen"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white"
             >
               <i className="fab fa-instagram cursor-pointer"></i>
             </a>
-            <a
+            {/* <a
               href="https://www.facebook.com/your_facebook_page"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white ms-3"
             >
               <i className="fab fa-facebook"></i>
-            </a>
+            </a> */}
           </div>
         </Container>
       </div>

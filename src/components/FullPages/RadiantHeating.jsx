@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import your images
 import radiantHeatingImage from '../../images/properties/underfloor-heat1.jpg';
-import hydronicHeatingImage from '../../images/properties/underfloor-heat1.jpg';
+import hydronicHeatingImage from '../../images/properties/2943331.jpg';
 
 // Card container style to ensure equal height
 const cardContainerStyle = {

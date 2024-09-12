@@ -81,7 +81,10 @@ const Locations = () => {
   return (
     <Container className="mb-5 pt-lg-5 text-white">
       <AnimationTitles title="Locations where we offer our service" />
-      <p className="py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tempora praesentium aperiam. Facilis, ea repudiandae. Deserunt cumque debitis nostrum quasi ab, iste, repellat itaque quae quas eos id. Eveniet, assumenda.</p>
+      <p className="py-3">
+          We proudly offer our services across various locations, ensuring expert support and solutions wherever you are. Whether residential or 
+          commercial, our team is ready to assist with professional, reliable service in your area.
+      </p>
       <Row>
         {locations.map((location, index) => (
           <Col key={index} xs={6} sm={6} md={4} lg={3}>
