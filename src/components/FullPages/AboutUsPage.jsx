@@ -6,6 +6,7 @@ import WhoWeAre from '../About/WhoWeAre';
 import ValuesComponent from '../About/ValuesComponent';
 import SecondAbout from '../About/SecondAbout';
 import { Container } from 'react-bootstrap';
+import Gallery from '../About/Gallery';
 
 const AboutUsPage = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const AboutUsPage = () => {
       <WhoWeAre />
       <ValuesComponent />
       <SecondAbout />
+      <Gallery />
     </>
   );
 };

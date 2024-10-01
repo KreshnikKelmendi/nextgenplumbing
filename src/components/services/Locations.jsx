@@ -8,26 +8,22 @@ import map1 from "../../images/properties/map.jpg"
 
 const locations = [
   {
-    city: 'New York',
-    description: 'Our services in the heart of New York.',
+    city: 'FARGO, ND',
     icon: faLocationDot,
     mapImage: map1 // Replace with your map image path
   },
   {
-    city: 'Los Angeles',
-    description: 'Premium services in Los Angeles.',
+    city: 'GRAND FORKS, ND',
     icon: faLocationDot,
     mapImage: map1 // Replace with your map image path
   },
   {
-    city: 'Chicago',
-    description: 'Top-notch services in Chicago.',
+    city: ' NORTH DAKOTA',
     icon: faLocationDot,
     mapImage: map1 // Replace with your map image path
   },
   {
-    city: 'Miami',
-    description: 'Exemplary services in Miami.',
+    city: 'MINNESOTA',
     icon: faLocationDot,
     mapImage: map1 // Replace with your map image path
   }
@@ -82,8 +78,8 @@ const Locations = () => {
     <Container className="mb-5 pt-lg-5 text-white">
       <AnimationTitles title="Locations where we offer our service" />
       <p className="py-3">
-          We proudly offer our services across various locations, ensuring expert support and solutions wherever you are. Whether residential or 
-          commercial, our team is ready to assist with professional, reliable service in your area.
+      We proudly offer services from our two locations Fargo and Grand Forks extending our expertise to the surrounding communities. 
+      Additionally, our reach spans across North Dakota and Minnesota, serving clients through specialized contracts. Contact us to explore how we can meet your needs today!
       </p>
       <Row>
         {locations.map((location, index) => (

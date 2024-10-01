@@ -11,7 +11,7 @@ const ValuesComponent = () => {
       title: 'Precision',
       icon: faWrench,
       description:
-        'We offer unparalleled expertise and reliable services in plumbing, heating, cooling, and dirt work solutions. Our commitment to customer satisfaction is evident in our top-notch craftsmanship, efficient problem-solving, and exceptional attention to detail.'
+        'We offer unparalleled expertise and reliable services in plumbing, and heating solutions. Our commitment to customer satisfaction is evident in our top-notch craftsmanship, efficient problem-solving, and exceptional attention to detail'
     },
     {
       title: 'Customer Satisfaction',

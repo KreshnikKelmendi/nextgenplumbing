@@ -11,7 +11,7 @@ const PlumbingServices = () => {
       
       <Accordion defaultActiveKey="0" className="custom-accordion">
         {/* Installation Services */}
-        <Accordion.Item eventKey="0" className="custom-accordion-item">
+        <Accordion.Item eventKey="1" className="custom-accordion-item">
           <Accordion.Header className="custom-accordion-header">1. Installation Services</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
@@ -50,7 +50,7 @@ const PlumbingServices = () => {
         </Accordion.Item>
 
         {/* Repair Services */}
-        <Accordion.Item eventKey="1" className="custom-accordion-item">
+        <Accordion.Item eventKey="2" className="custom-accordion-item">
           <Accordion.Header className="custom-accordion-header">2. Repair Services</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
@@ -89,7 +89,7 @@ const PlumbingServices = () => {
         </Accordion.Item>
 
         {/* Maintenance Services */}
-        <Accordion.Item eventKey="2" className="custom-accordion-item">
+        <Accordion.Item eventKey="3" className="custom-accordion-item">
           <Accordion.Header className="custom-accordion-header">3. Maintenance Services</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
@@ -128,7 +128,7 @@ const PlumbingServices = () => {
         </Accordion.Item>
 
         {/* Emergency Services */}
-        <Accordion.Item eventKey="3" className="custom-accordion-item">
+        <Accordion.Item eventKey="4" className="custom-accordion-item">
           <Accordion.Header className="custom-accordion-header">4. Emergency Services</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
@@ -147,7 +147,7 @@ const PlumbingServices = () => {
         </Accordion.Item>
 
         {/* Remodeling and Upgrades */}
-        <Accordion.Item eventKey="4" className="custom-accordion-item">
+        <Accordion.Item eventKey="5" className="custom-accordion-item">
           <Accordion.Header className="custom-accordion-header">5. Remodeling and Upgrades</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
@@ -185,9 +185,81 @@ const PlumbingServices = () => {
           </Accordion.Body>
         </Accordion.Item>
 
+        <Accordion.Item eventKey="6" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">6. Drain Cleaning</Accordion.Header>
+          <Accordion.Body className="custom-accordion-body">
+            <Row>
+              <Col md={4}>
+                <Card className="mb-3 h-100 custom-card">
+                  <Card.Body>
+                    <Card.Title>Drain Cleaning</Card.Title>
+                    <Card.Text>
+                      Regular cleaning of drains to prevent clogs.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="9" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">7. Pipe Inspections</Accordion.Header>
+          <Accordion.Body className="custom-accordion-body">
+            <Row>
+              <Col md={4}>
+                <Card className="mb-3 h-100 custom-card">
+                  <Card.Body>
+                    <Card.Title>Pipe Inspections</Card.Title>
+                    <Card.Text>
+                      Using cameras to inspect pipes and diagnose issues.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="10" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">8. Water Heater Maintenance</Accordion.Header>
+          <Accordion.Body className="custom-accordion-body">
+            <Row>
+              <Col md={4}>
+                <Card className="mb-3 h-100 custom-card">
+                  <Card.Body>
+                    <Card.Title>Water Heater Maintenance</Card.Title>
+                    <Card.Text>
+                      Routine maintenance to extend the life of water heaters.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="11" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">9. Backflow Testing</Accordion.Header>
+          <Accordion.Body className="custom-accordion-body">
+            <Row>
+              <Col md={4}>
+                <Card className="mb-3 h-100 custom-card">
+                  <Card.Body>
+                    <Card.Title>Backflow Testing</Card.Title>
+                    <Card.Text>
+                      Testing and maintaining water supply from any contamination.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+
         {/* New Construction */}
-        <Accordion.Item eventKey="5" className="custom-accordion-item">
-          <Accordion.Header className="custom-accordion-header">6. New Construction</Accordion.Header>
+        <Accordion.Item eventKey="7" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">10. New Construction</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
               <Col md={4}>
@@ -225,8 +297,8 @@ const PlumbingServices = () => {
         </Accordion.Item>
 
         {/* Specialized Services */}
-        <Accordion.Item eventKey="6" className="custom-accordion-item">
-          <Accordion.Header className="custom-accordion-header">7. Specialized Services</Accordion.Header>
+        <Accordion.Item eventKey="8" className="custom-accordion-item">
+          <Accordion.Header className="custom-accordion-header">11. Specialized Services</Accordion.Header>
           <Accordion.Body className="custom-accordion-body">
             <Row>
               <Col md={4}>
@@ -263,6 +335,7 @@ const PlumbingServices = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+      
     </Container>
   );
 };

@@ -2,21 +2,23 @@ import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faWrench, faSyncAlt, faThermometerHalf, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import WaterTreatment2 from './WaterTreatment2';
 
 const WaterHeaters = () => {
   return (
     <>
       <Container className="my-3">
+        <WaterTreatment2 />
 
         <Card className=" border-0" style={{ backgroundColor: 'transparent' }}>
           <Card.Body>
 
             <Row className="mb-4">
               <Col>
-                <Card.Title className="text-center text-white text-uppercase p-3 rounded" style={{backgroundColor: "#000e5d"}}>
+                {/* <Card.Title className="text-center text-white text-uppercase p-3 rounded" style={{backgroundColor: "#000e5d"}}>
                 Water Heaters and Water Treatment
-                </Card.Title>
-                <Card.Text className="mt-3 text-center text-white">
+                </Card.Title> */}
+                <Card.Text className="mt-3 text-white">
                   Experience consistent hot water with our top-tier water heater services. Whether you need a new installation, replacement, or repair, our expert team ensures reliable performance and energy efficiency. We specialize in both traditional tank-style water heaters and modern tankless systems, tailored to meet your specific needs.
                 </Card.Text>
               </Col>

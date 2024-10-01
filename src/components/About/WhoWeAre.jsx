@@ -2,13 +2,18 @@ import React from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import image1 from "../../images/properties/underfloor-heating.jpg";
 import image2 from "../../images/properties/IMG_5932.JPG";
+import image3 from "../../images/properties/IMG_5055.jpg"
+import image4 from "../../images/properties/IMG_2580 (1).jpg"
+import image5 from "../../images/properties/IMG_2317 (1).jpg"
 import AnimationTitles from '../functions/AnimationTitles';
 
 const AboutUs = () => {
   const carouselImages = [
     image1,
     image2,
-    image1
+    image3,
+    image4,
+    image5
   ];
 
   return (

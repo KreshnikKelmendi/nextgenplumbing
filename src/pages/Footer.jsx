@@ -8,14 +8,16 @@ import mastercard from "../images/properties/card (1).png";
 
 const Footer = () => {
   return (
-    <footer className="position-relative pt-0 py-xxl-2">
+    <footer className="position-relative pt-0 py-xxl-2 text-white">
       <Container>
-        <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-5">
-          {/* Left column */}
+        {/* Top Section */}
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-start py-5">
+          {/* Left Section */}
           <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
+            className="mb-4 mb-md-0"
           >
             <img
               src={require("../images/logo/nextgen-white.png")}
@@ -23,110 +25,91 @@ const Footer = () => {
               className="mb-3"
               style={{ width: "150px", height: "auto", objectFit: "contain" }}
             />
-            <p className="text-white">
+            <p className="mb-2">
               Please contact us if you have any specific <br /> idea or request.
             </p>
-            <Link className="link-info link-underline-opacity-0 fw-bold" to={""}>
-            fjavori@ndnextgen.com
+            <Link
+              className="link-info link-underline-opacity-0 fw-bold"
+              to={""}
+            >
+              fjavori@ndnextgen.com
             </Link>
           </motion.div>
 
-          {/* Spacer for mobile */}
-          <span className="d-block d-md-none"></span>
-
-          {/* Right column */}
+          {/* Middle Section: Menu */}
           <motion.div
             initial={{ x: 200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
-            className="d-flex flex-wrap"
+            className="d-flex flex-column flex-md-row gap-md-5 gap-3 mb-4 mb-md-0"
           >
-            <div className="me-5">
-              <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
-                MENU
-              </h6>
-              <ul className="p-0">
-                <li><NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Home</NavLink></li>
-                <li><NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>About Us</NavLink></li>
-                <li><NavLink to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Services</NavLink></li>
-                <li className='mt-1'><NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} style={{color:"white"}}>Contact</NavLink></li>
-
+            {/* Menu Links */}
+            <div>
+              <h6 className="fw-bold text-uppercase mb-3">Menu</h6>
+              <ul className="list-unstyled">
+                <li><NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="text-white">Home</NavLink></li>
+                <li><NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="text-white">About Us</NavLink></li>
+                <li><NavLink to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="text-white">Services</NavLink></li>
+                <li><NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} className="text-white">Contact</NavLink></li>
               </ul>
             </div>
+
+            {/* Social Links */}
             <div>
-              <h6 className="text-white fw-bold text-uppercase mb-2 fw-normal">
-                Socials
-              </h6>
-              <ul className="p-0">
-                <li><a style={{color: "white"}} href="https://www.instagram.com/ndnextgen" target='_blank' rel="noreferrer">Instagram</a></li>
-                {/* <li>Facebook</li> */}
+              <h6 className="fw-bold text-uppercase mb-3">Socials</h6>
+              <ul className="list-unstyled">
+                <li><a href="https://www.instagram.com/ndnextgen" target="_blank" rel="noreferrer" className="text-white">Instagram</a></li>
               </ul>
             </div>
           </motion.div>
-        </div>
 
-        {/* Operating Hours and Payment Methods section */}
-        <div className="d-flex justify-content-between flex-column flex-md-row text-white py-3">
-          {/* Operating Hours */}
-          <div className="me-md-5">
-            <h6 className="fw-bold text-uppercase mb-2 fw-normal">
-              Operating Hours
-            </h6>
-            <ul className="p-0 list-unstyled">
-              <li>Monday-Friday: 8:00AM - 5:00PM</li>
-              <li>Saturday: Scheduled Appointments</li>
-              <li>Sunday: Closed</li>
-            </ul>
-          </div>
-
-          {/* Payment Methods */}
-          <div>
-            <h6 className="fw-bold text-uppercase mb-2 fw-normal">
-              Payment Methods
-            </h6>
-            <ul className="p-0">
-              <li className="d-flex align-items-center">
-                <img
-                  src={cash}
-                  className="me-2"
-                  style={{ width: "40px", height: "40px" }}
-                  alt="Check Payment"
-                />
+          {/* Right Section: Payment Methods */}
+          <motion.div
+            initial={{ x: 200 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="d-flex flex-column"
+          >
+            <h6 className="fw-bold text-uppercase mb-3">Payment Methods</h6>
+            <ul className="list-unstyled">
+              <li className="d-flex align-items-center mb-2">
+                <img src={cash} className="me-2" style={{ width: "40px", height: "40px" }} alt="Check Payment" />
                 Check Payment
               </li>
-              <li className="d-flex align-items-center">
-                <img
-                  src={visa}
-                  className="me-2"
-                  style={{ width: "40px", height: "40px" }}
-                  alt="Visa Payment"
-                />
+              <li className="d-flex align-items-center mb-2">
+                <img src={visa} className="me-2" style={{ width: "40px", height: "40px" }} alt="Visa Payment" />
                 Visa Payment
               </li>
               <li className="d-flex align-items-center">
-                <img
-                  src={mastercard}
-                  className="me-2"
-                  style={{ width: "40px", height: "40px" }}
-                  alt="Mastercard Payment"
-                />
+                <img src={mastercard} className="me-2" style={{ width: "40px", height: "40px" }} alt="Mastercard Payment" />
                 Mastercard Payment
               </li>
             </ul>
-          </div>
+            <p className="small mt-2">Payments made via methods other than check or cash will incur a 2.5% service fee.</p>
+          </motion.div>
         </div>
 
-        {/* Bottom section */}
+        {/* Operating Hours */}
+        <div className="text-center text-md-start mb-5">
+          <h6 className="fw-bold text-uppercase mb-3">Operating Hours</h6>
+          <ul className="list-unstyled">
+            <li>Monday-Friday: 8:00AM - 5:00PM</li>
+            <li>Saturday: Scheduled Appointments</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+
+        {/* Footer Bottom Section */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="d-flex justify-content-between flex-column flex-md-row flex-wrap text-white pt-3"
+          className="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 border-top border-white"
         >
-          <p>© 2024 NEXTGEN PLUMBING. All rights reserved</p>
+          <p className="mb-3 mb-md-0">© 2024 NEXTGEN PLUMBING. All rights reserved</p>
           <p>
             Developed by: {''}
-            <a href='https://www.sync-code.com/' target='_blank' rel="noreferrer" className="link-info link-underline-opacity-0" to={""}>
+            <a href='https://www.sync-code.com/' target='_blank' rel="noreferrer" className="link-info link-underline-opacity-0">
               Sync Code
             </a>
           </p>
@@ -136,7 +119,7 @@ const Footer = () => {
       {/* Wave SVG */}
       <svg
         id="wave"
-        className="wave-animation position-absolute"
+        className="wave-animation position-absolute w-100 bottom-0"
         viewBox="0 0 1440 490"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
