@@ -5,7 +5,7 @@ import plumbingman from "../../images/properties/plumbing-man.jpeg";
 const WhyUs = () => {
   // Function to handle the phone call
   const handleCall = () => {
-    window.open('tel:+123456789', '_blank');
+    window.open('tel:+1 701 970 9860', '_blank');
   };
 
   return (
