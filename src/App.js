@@ -87,7 +87,7 @@ function App() {
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/plumbing-services" element={<AllPlumbing />} />
+            <Route path="/plumbing-services" element={<PlumbingServices />} />
             <Route path="/radiant-heating" element={<RadiantHeating />} />
             <Route path="/gas-piping&testing-services" element={<GasPiping />} />
             <Route path="/water-heaters&water-treatment" element={<WaterTreatment />} />
