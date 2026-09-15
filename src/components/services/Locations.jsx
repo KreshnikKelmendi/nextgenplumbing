@@ -56,18 +56,6 @@ const Locations = () => {
     fontWeight: 'bold',
   };
 
-  const containerStyle = {
-    maxWidth: '1200px',
-    margin: 'auto'
-  };
-
-  const headerStyle = {
-    fontWeight: 'bold',
-    color: '#000e5d',
-    textAlign: 'center',
-    marginBottom: '40px'
-  };
-
   const iconStyle = {
     fontSize: '50px',
     color: '#000e5d',

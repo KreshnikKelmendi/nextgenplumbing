@@ -1,18 +1,10 @@
 import { Button, Card, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CountDown from "../components/functions/CountDown";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
 import { Link } from "react-router-dom";
 
 function Loading() {
-  // Like button of properties
-  function like(e) {
-    return e.target.classList.value === "fa-regular fa-heart like"
-      ? (e.target.classList.value = "fa-solid fa-heart like text-danger")
-      : (e.target.classList.value = "fa-regular fa-heart like");
-  }
-
   return (
     <div className="loading position-relative">
       <Container className="d-flex justify-content-between align-items-center gap-md-5 flex-column flex-md-row mt-3 mt-xl-4">

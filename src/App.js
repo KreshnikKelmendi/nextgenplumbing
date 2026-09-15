@@ -14,7 +14,6 @@ import PlumbingServices from "./components/FullPages/PlumbingServices";
 import RadiantHeating from "./components/FullPages/RadiantHeating";
 import GasPiping from "./components/FullPages/GasPiping";
 import WaterTreatment from "./components/FullPages/WaterTreatment";
-import AllPlumbing from "./components/FullPages/AllPlumbing";
 
 function App() {
   const [loading, setLoading] = useState(true);
