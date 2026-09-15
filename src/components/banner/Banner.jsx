@@ -14,11 +14,11 @@ const Banner = () => {
             <Button
               variant='secondary'
               style={{ backgroundColor: "#ff0000", border: "none" }}
-              href="tel:+17019709860"
+              href="tel:+17017398040"
               size="lg"
-              title='Call Us +1 701 970 9860'
+              title='Call Us +1 701 739 8040'
             >
-              Call Us: +1 701 970 9860
+              Call Us: +1 701 739 8040
             </Button>
           </Col>
         </Row>
