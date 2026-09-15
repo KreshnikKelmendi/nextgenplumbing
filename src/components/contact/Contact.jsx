@@ -14,11 +14,11 @@ const Contact = () => {
               <div style={{ marginTop: '21px' }}>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faPhone} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
-                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>+ 1 701 970 9860</p>
+                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>+1 701 739 8040</p>
                 </div>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ marginBottom: '10px', color: '#555' }} />
-                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>fjavori@ndnextgen.com</p>
+                  <p style={{ margin: 0, fontSize: '1.2em', color: 'white' }}>ndnextgen@outlook.com</p>
                 </div>
                 <div style={{ marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" style={{ marginBottom: '10px', color: '#555' }} />

@@ -145,3 +145,168 @@
   color: white !important;
 }
 
+.get-started-btn {
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 10px 28px;
+  border-radius: 8px;
+  margin-left: 0;
+  box-shadow: 0 8px 18px rgba(255, 0, 0, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+@media (max-width: 991.98px) {
+  .get-started-btn {
+    width: 100%;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+.get-started-btn:hover,
+.get-started-btn:focus {
+  background: #e00000;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(255, 0, 0, 0.35);
+}
+
+.get-started-offcanvas {
+  background: linear-gradient(180deg, #000e5d 0%, #020617 100%);
+  color: #fff;
+  width: min(420px, 100vw);
+}
+
+.get-started-offcanvas .offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.25rem 1.5rem;
+}
+
+.get-started-offcanvas .offcanvas-title {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.get-started-offcanvas .offcanvas-body {
+  padding: 1.5rem;
+}
+
+.get-started-intro {
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-card,
+.instagram-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.9rem;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover,
+.instagram-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.contact-card-static {
+  cursor: default;
+}
+
+.contact-card-static:hover {
+  transform: none;
+}
+
+.contact-card-icon {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff0000;
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.35);
+}
+
+.contact-card-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contact-card-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.62);
+  margin-bottom: 0.15rem;
+}
+
+.contact-card-value {
+  font-weight: 600;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.instagram-card {
+  margin-top: 1.4rem;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: none;
+  box-shadow: 0 12px 24px rgba(188, 24, 136, 0.35);
+}
+
+.instagram-card:hover {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: brightness(1.06);
+}
+
+.instagram-card-icon {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1.4rem;
+}
+
+.instagram-card-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.instagram-card-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.instagram-card-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.instagram-card-arrow {
+  opacity: 0.85;
+}
+

@@ -28,7 +28,7 @@ function NavBar() {
           <div className="d-flex align-items-center">
             <i className="fas fa-phone-alt me-2"></i>
             <p className="mb-0">
-              Call us at: <strong>+1 701 970 9860</strong>
+              Call us at: <strong>+1 701 739 8040</strong>
             </p>
           </div>
           <div className="d-flex align-items-center">

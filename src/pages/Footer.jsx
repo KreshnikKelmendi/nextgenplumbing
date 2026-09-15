@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import cash from "../images/properties/secure-payment.png";
 import visa from "../images/properties/visa (1).png";
@@ -28,12 +28,12 @@ const Footer = () => {
             <p className="mb-2">
               Please contact us if you have any specific <br /> idea or request.
             </p>
-            <Link
+            <a
               className="link-info link-underline-opacity-0 fw-bold"
-              to={""}
+              href="mailto:ndnextgen@outlook.com"
             >
-              fjavori@ndnextgen.com
-            </Link>
+              ndnextgen@outlook.com
+            </a>
           </motion.div>
 
           {/* Middle Section: Menu */}
